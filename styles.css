@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.card {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.poll-item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.poll-item:last-child {
+    border-bottom: none;
+}
+
+.poll-item h3 {
+    margin-top: 0;
+    color: #555;
+}
+
+.options-container {
+    display: flex;
+    gap: 10px;
+}
+
+.option-button {
+    flex: 1;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option-button:first-of-type {
+    background-color: #28a745; /* Verde */
+    color: white;
+    border: none;
+}
+
+.option-button:last-of-type {
+    background-color: #28a745; /* Verde */
+    color: white;
+    border: none;
+}
+
+.option-button:hover {
+    opacity: 0.9;
+}
+
+.results {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed #ccc;
+    font-size: 1.1em;
+}
+
+.result-bar {
+    background-color: #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+    height: 25px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.result-bar div {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.result-bar .option1-bar { background-color: #ff0000; }
+.result-bar .option2-bar { background-color: #ff0000; }
+
+.countdown {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 10px;
+}
+
+
+/* Estilo para las líneas divisorias */
+.divider {
+    border: 0;
+    height: 3px; /* Aumenta el grosor para que sea más visible */
+    background-color: #000000; /* Color gris claro */
+    margin: 20px 0;
+}

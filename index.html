@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuestas de dos opciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="auth-container" class="card">
+            <h1>SÓLOUNO</h1>
+            <h2>Autenticación</h2>
+            <form id="login-form">
+                <h4>Ingresa tu email y password para registrarte o ingresar</h4>
+                <input type="email" id="login-email" placeholder="Correo electrónico" required>
+                <input type="password" id="login-password" placeholder="Contraseña" required>
+                <h4>Si te estás registrando coloca un nombre o alias</h4>
+                <input type="text" id="register-name" placeholder="Nombre o alias" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            
+            <div class="register-section">
+                <button id="register-btn">Registrarme</button>
+            </div>
+        </div>
+
+        <div id="app-container" style="display: none;">
+            <div id="user-info">
+                <span>Hola, <strong id="user-display-name"></strong>!</span>
+                <button id="logout-btn">Cerrar Sesión</button>
+            </div>
+            
+            <h1>SÓLOUNO</h1>
+            <h3>Crea una encuesta de sólo 2 opciones</h3>
+            <h4>El resultado anónimo se podrá ver a las 24 horas</h4>
+            <div class="card create-poll-card">
+                <form id="create-poll-form">
+                    <input type="text" id="question" placeholder="Tu pregunta" required>
+                    <input type="text" id="option1" placeholder="Opción 1" required>
+                    <input type="text" id="option2" placeholder="Opción 2" required>
+                    <button type="submit">Crear Encuesta</button>
+                </form>
+            </div>
+    
+            <div id="polls-list">
+                </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
